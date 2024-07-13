@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+PE:wght@100..400&display=swap');
+
+
+*{
+    color: #fff;
+    font-family: "Arsenal SC", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: auto;
+    height: 100vh;
+    background: linear-gradient( to right , #01022d , #000);
+ 
+}
+
+.container{
+    height: 100vh;
+    background-image:
+    linear-gradient(to right , rgba(22, 25, 177, 0.44) 30% , rgba(255, 99, 71, 0.397)) ,
+    
+    url(assets/img/Avatar.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container:hover{
+    background-image:
+    linear-gradient(to right , rgba(22, 25, 177, 0.44) 30% , transparent) ,
+    
+    url(assets/img/Avatar.jpg);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+   font-size: 30px;
+}
+.logo h4{
+    font-family: "Playwrite PE", cursive;
+
+}
+
+.links {
+    width: 60%;
+}
+
+.links ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+    
+}
+
+.links ul li a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.links ul li a:hover{
+    transform: scale(4);
+    border-bottom: 2px solid #ffffff;
+    animation-name: smoth;
+    
+
+}
+
+.title h1{
+    text-transform: uppercase;
+    font-size:6dvi;
+}
+
+.content .description{
+    padding: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+}
+.btn{
+    padding-top: 25px;
+}
+.description .btn button{
+    border-radius: 50px;
+    border: 3px solid transparent;
+    width: 150px;
+    height: 35px;
+    background: rgba(255, 99, 71, 0.397);
+    color: rgb(40, 41, 113);
+    font-size: 22px;
+}
+
+.description .btn button:hover{
+    border: 3px solid #fff;
+    background: transparent;
+    color: rgba(255, 99, 71, 0.397);
+    cursor: pointer;
+}
